@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDFC Bank - Customer Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004c8f; /* HDFC Blue */
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 5px solid #e11a22; /* HDFC Red Line */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .welcome-msg {
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .balance-card {
+            background: linear-gradient(135deg, #004c8f, #002e57);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .balance-card h2 {
+            margin: 0;
+            font-size: 18px;
+            opacity: 0.8;
+            text-transform: uppercase;
+        }
+
+        .balance-amount {
+            font-size: 42px;
+            font-weight: bold;
+            margin: 15px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+       
+        .transaction-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e0e0e0;
+        }
+
+        .transaction-box h3 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid #004c8f;
+            padding-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            color: #004c8f;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f1f5f9; /* Row glow effect on hover */
+        }
+
+        .status-success {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        .status-pending {
+            color: #c62828;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HDFC BANK</h1>
+        <div class="welcome-msg">Welcome, Aruna Basantara</div>
+    </header>
+
+    <div class="container">
+
+        <div class="balance-card">
+            <h2>Net-Banking Account Balance</h2>
+            <div class="balance-amount">₹45,250.00</div>
+            <p>Account No: XXXXXX0684 | Damana Square Branch</p>
+        </div>
+
+x        <div class="transaction-box">
+            <h3>Recent Statement & Salary Details</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>25-Sep-2026</td>
+                        <td>IT Startup Stipend</td>
+                        <td>Credit</td>
+                        <td style="color: #2e7d32;">+ ₹15,000.00</td>
+                        <td class="status-success">Success</td>
+                    </tr>
+                    <tr>
+                        <td>20-Sep-2026</td>
+                        <td>GitHub Pro Subscription</td>
+                        <td>Debit</td>
+                        <td style="color: #c62828;">- ₹450.00</td>
+                        <td class="status-success">Success</td>
+                    </tr>
+                    <tr>
+                        <td>15-Sep-2026</td>
+                        <td>Hostel Wifi Bill Patia</td>
+                        <td>Debit</td>
+                        <td style="color: #c62828;">- ₹700.00</td>
+                        <td class="status-success">Success</td>
+                    </tr>
+                    <tr>
+                        <td>10-Sep-2026</td>
+                        <td>IGNOU Exam Form Fee</td>
+                        <td>Debit</td>
+                        <td style="color: #c62828;">- ₹1,200.00</td>
+                        <td class="status-success">Success</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>
